@@ -3,19 +3,18 @@
 using namespace std;
 
 int main(){
-  double Y,Ya;
+  double Y,Ya,Yd;
   double Yh,Ym;
  
-  cout << "日数を書いてください" << flush;
+  cout << "please write the time > " << flush;
   cin >> Y;
 
-  Yd = floor(Y)
-  Yh = floor((Y-Yd)*24)
-  Ym = floor(((Y-Yd)*24-Yh)*60)
-  Ya = ((Y-Yd)*24-Yh)*60-Ym
+  Yd = floor(Y);
+  Yh = floor((Y-Yd)*24);
+  Ym = floor(((Y-Yd)*24-Yh)*60);
+  Ya = ((Y-Yd)*24-Yh)*60-Ym;
 
-  cout << "貴方の書いた時間は、 " << Yd << "日" << Yh　<< "時" <<　Ym << "分あまり"<< Ya << "ですね。" << endl; 
-
+  cout << "Your writing time is:"<<Yd<<" days "<<Yh<<" hours "<<Ym<<" minutes leave "<<Ya<<"."<<endl; 
 
   return 0;
 }
